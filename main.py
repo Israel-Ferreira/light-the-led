@@ -2,9 +2,10 @@ from src.components import show_app_title
 
 from src.config import load_instance_config
 
-from src.arduino import get_arduino_instance
+from src.arduino import get_arduino_instance, blink_leds_in_purple_color
 
 from src.http import get_team_last_game
+
 
 
 if __name__ == "__main__":
@@ -29,7 +30,4 @@ if __name__ == "__main__":
         print(season_id)
         print("LIGHT THE BEAM")
 
-
-        board.digital[red].write(1)
-        board.digital[green].write(0)
-        board.digital[blue].write(1)
+        blink_leds_in_purple_color(board, red, green, blue)
