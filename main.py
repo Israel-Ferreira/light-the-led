@@ -31,5 +31,5 @@ if __name__ == "__main__":
 
 
         board.digital[red].write(1)
-        board.digital[blue].write(1)
         board.digital[green].write(0)
+        board.digital[blue].write(1)
