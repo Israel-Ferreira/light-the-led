@@ -1,0 +1,1 @@
+from src.config.load_workaround_firmata import load_instance_config
